@@ -6,7 +6,7 @@ IRC bot that pins [IPFS](http://ipfs.io) files.
 
 In a terminal
 ```
-go get -u github.com/whyrusleeping/pinbot
+go get -u github.com/fczuardi/pinbot
 pinbot [-s <server>]
 ```
 
