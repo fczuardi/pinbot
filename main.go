@@ -15,7 +15,7 @@ import (
 
 var prefix = "!"
 // var gateway = "https://ipfs.io"
-var gateway = "https://ipfs.nulo.com.br"
+var gateway = "http://ipfs.nulo.com.br"
 
 var (
 	cmdBotsnack = prefix + "botsnack"
