@@ -216,8 +216,8 @@ func connectToFreenodeIpfs(con *hb.IrcCon) {
 	con.AddTrigger(EatEverything)
 	con.Start()
 	con.Join("#fcz-test")
-	// con.Join("#ip-berlin")
-	// con.Join("#ip-seattle")
+	con.Join("#onibushacker")
+	con.Join("#labhacker")
 
 	for _ = range con.Incoming {
 	}
