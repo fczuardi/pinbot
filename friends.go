@@ -16,7 +16,7 @@ const (
 
 var DefaultFriendsList = FriendsList{
 	friends: map[string]string{
-		"Zuardi":	"admin",
+		"zuardi":	"admin",
 	},
 }
 

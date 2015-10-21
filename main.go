@@ -163,7 +163,7 @@ func loadHosts() []string {
 
 func main() {
 	name := flag.String("name", "pinbot-fcz", "set pinbots name")
-	server := flag.String("server", "irc.freenode.net:6667", "set server to connect to")
+	server := flag.String("server", "irc.mozilla.org:6667", "set server to connect to")
 	flag.Parse()
 
 	for _, h := range loadHosts() {
@@ -215,9 +215,7 @@ func connectToFreenodeIpfs(con *hb.IrcCon) {
 	con.AddTrigger(OmNomNom)
 	con.AddTrigger(EatEverything)
 	con.Start()
-	con.Join("#fcz-test")
-	con.Join("#onibushacker")
-	con.Join("#labhacker")
+	con.Join("#mozilla-br")
 
 	for _ = range con.Incoming {
 	}
