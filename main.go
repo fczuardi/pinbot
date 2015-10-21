@@ -14,7 +14,8 @@ import (
 )
 
 var prefix = "!"
-var gateway = "https://ipfs.io"
+// var gateway = "https://ipfs.io"
+var gateway = "https://ipfs.nulo.com.br"
 
 var (
 	cmdBotsnack = prefix + "botsnack"
@@ -161,7 +162,7 @@ func loadHosts() []string {
 }
 
 func main() {
-	name := flag.String("name", "pinbot-test", "set pinbots name")
+	name := flag.String("name", "pinbot-fcz", "set pinbots name")
 	server := flag.String("server", "irc.freenode.net:6667", "set server to connect to")
 	flag.Parse()
 
@@ -214,9 +215,9 @@ func connectToFreenodeIpfs(con *hb.IrcCon) {
 	con.AddTrigger(OmNomNom)
 	con.AddTrigger(EatEverything)
 	con.Start()
-	con.Join("#ipfs")
-	con.Join("#ip-berlin")
-	con.Join("#ip-seattle")
+	con.Join("#fcz-test")
+	// con.Join("#ip-berlin")
+	// con.Join("#ip-seattle")
 
 	for _ = range con.Incoming {
 	}
